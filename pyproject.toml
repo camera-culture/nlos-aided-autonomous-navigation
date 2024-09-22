@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nlos-navigation"
+version = "0.0"
+authors = ["Camera Culture <a2cc@media.mit.edu>"]
+description = "Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR"
+readme = "README.md"
+packages = [{ include = "nlos_navigation" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+matplotlib = "^3.9.2"
+numpy = "^2.1.1"
+cc-hardware = { path = "libs/cc-hardware", develop = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
