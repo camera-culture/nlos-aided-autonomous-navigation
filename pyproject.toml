@@ -9,7 +9,8 @@ packages = [{ include = "nlos_navigation" }]
 [tool.poetry.dependencies]
 python = "^3.12"
 matplotlib = "^3.9.2"
-numpy = "^2.1.1"
+numpy = ">=1.26.4"
+opencv-python = "^4.10.0.84"
 cc-hardware = { path = "libs/cc-hardware", develop = true }
 
 [build-system]
