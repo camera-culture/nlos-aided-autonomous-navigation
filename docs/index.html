@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+
+<style type="text/css">
+body {
+	font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+h1 {
+	font-weight:300;
+	line-height: 1.15em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+a:link,a:visited {
+	color: #1367a7;
+	text-decoration: none;
+}
+a:hover {
+	color: #208799;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2, h3 {
+	font-weight: 400;
+	margin: 16px 0px 4px 0px;
+}
+.paper-title {
+	padding: 16px 0px 16px 0px;
+}
+section {
+	margin: 32px 0px 32px 0px;
+	text-align: justify;
+	clear: both;
+}
+.col-5 {
+	 width: 20%;
+	 float: left;
+}
+.col-4 {
+	 width: 25%;
+	 float: left;
+}
+.col-2 {
+	 width: 50%;
+	 float: left;
+}
+.row, .author-row, .affil-row {
+	 overflow: auto;
+}
+.author-row, .affil-row {
+	font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.author-row .col-3, .affil-row .col-3 {
+    flex: 1 1 auto;
+    max-width: 25%;
+    text-align: center;
+    margin: 0 10px; /* Adjust spacing if necessary */
+}
+.row {
+	margin: 16px 0px 16px 0px;
+}
+.authors {
+	font-size: 18px;
+}
+.affil-row {
+	margin-top: 16px;
+}
+.teaser {
+	max-width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.screenshot {
+	width: 256px;
+	border: 1px solid #ddd;
+}
+.screenshot-el {
+	margin-bottom: 16px;
+}
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ddd;
+	margin: 0;
+}
+.material-icons {
+	vertical-align: -6px;
+}
+p {
+	line-height: 1.25em;
+}
+.caption_justify {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 64px;
+}
+.caption {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+.caption_inline {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+.caption_bold {
+	font-size: 16px;
+	/*font-style: italic;*/
+	color: #666;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+video {
+	display: block;
+	margin: auto;
+}
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#bibtex pre {
+	font-size: 14px;
+	background-color: #eee;
+	padding: 16px;
+}
+.blue {
+	color: #2c82c9;
+	font-weight: bold;
+}
+.orange {
+	color: #d35400;
+	font-weight: bold;
+}
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 18px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  font-weight: 600;
+}
+.paper-btn-parent {
+	display: flex;
+	justify-content: center;
+	margin: 16px 0px;
+}
+.paper-btn:hover {
+	opacity: 0.85;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.venue {
+	color: #1367a7;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#home1 { 
+    width: 47.5%; 
+    height: 300px; 
+    float: left; 
+    margin-right: 5%;
+} 
+#home2 { 
+    width: 47.5%; 
+    height: 300px; 
+    float: left; 
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+	<title>Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</title>
+	<meta property="og:description" content="Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<div class="paper-title">
+		<h1>Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</h1>
+	</div>
+
+	<div id="authors">
+		<div class="author-row">
+            <div class="col-3 text-center"><a href="https://AaronYoung5.github.io/">Aaron Young</a><sup>*1</sup></div>
+            <div class="col-3 text-center"><a href="https://www.linkedin.com/in/nevindu-b-664a3613b/">Nevindu M. Batagoda</a><sup>*2</sup></div>
+            <div class="col-3 text-center"><a href="">Harry Zhang</a><sup>2</sup></div>
+            <div class="col-3 text-center"><a href="https://akshatdave.github.io/">Akshat Dave</a><sup>1</sup></div>
+            <div style="flex-basis: 100%; height: 0;"></div>
+            <div class="col-3 text-center"><a href="https://sites.google.com/view/adithyapediredla/">Adithya Pediredla</a><sup>3</sup></div>
+            <div class="col-3 text-center"><a href="https://sbel.wisc.edu/negrut-dan/">Dan Negrut</a><sup>3</sup></div>
+            <div class="col-3 text-center"><a href="https://www.media.mit.edu/people/raskar/overview/">Ramesh Raskar</a><sup>1</sup></div>
+		</div>
+            
+        <div class="affil-row">
+            <div class="col-3 text-center"><sup>1</sup>Massachusetts Institute of Technology</a></div>
+            <div class="col-3 text-center"><sup>2</sup>University of Wisconsin-Madison</a></div>
+            <div class="col-3 text-center"><sup>3</sup>Dartmouth College</a></div>
+        </div>
+
+		<!-- <div class="affil-row">
+			<div class="venue text-center"><b><a href="https://2025.ieee-icra.org/">2025 IEEE International Conference on Robotics & Automation</a></b></div>
+		</div> -->
+
+		<div style="clear: both">
+			<div class="paper-btn-parent">
+				<a class="paper-btn" href="assets/young2024robospad.pdf">
+					<span class="material-icons"> description </span>
+					Paper
+				</a>
+				<a class="paper-btn" href="https://github.com/camera-culture/nlos-aided-autonomous-navigation">
+					<span class="material-icons"> description </span>
+					Code
+				</a>
+				<a class="paper-btn" href="https://youtu.be/0GoUi0wrNMM">
+					<span class="material-icons"> description </span>
+					Video
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>
+                Technical Video
+            </h2>
+            <div class="text-center">
+                <div style="position:relative;padding-top:56.25%;">
+                    <iframe src="https://www.youtube.com/embed/0GoUi0wrNMM?si=ziH-_zLa3ryIqstk" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<section id="abstract">
+		<h2>Abstract</h2>
+		<hr>
+		<p>
+            Robust autonomous navigation in environments with limited visibility remains a critical challenge in robotics. We present a novel approach that leverages Non-Line-of-Sight (NLOS) sensing using single-photon LiDAR to improve visibility and enhance autonomous navigation. Our method enables mobile robots to ``see around corners" by utilizing multi-bounce light information, effectively expanding their perceptual range without additional infrastructure. We propose a three-module pipeline: (1) Sensing, which captures multi-bounce histograms using SPAD-based LiDAR; (2) Perception, which estimates occupancy maps of hidden regions from these histograms using a convolutional neural network; and (3) Control, which allows a robot to follow safe paths based on the estimated occupancy. We evaluate our approach through simulations and real-world experiments on a mobile robot navigating an L-shaped corridor with hidden obstacles. Our work represents the first experimental demonstration of NLOS imaging for autonomous navigation, paving the way for safer and more efficient robotic systems operating in complex environments. We also contribute a novel dynamics-integrated transient rendering framework for simulating NLOS scenarios, facilitating future research in this domain.
+		</p>
+	</section>
+
+	<section id="paper">
+		<h2>Paper</h2>
+		<hr>
+		<div class="flex-row">
+			<div style="box-sizing: border-box; padding: 16px; margin: auto;">
+				<a href="assets/young2024robospad.pdf"><img class="screenshot" src="assets/paper-thumbnail.png"></a>
+			</div>
+			<div style="width: 60%">
+				<p><b>Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</b></p>
+				<p>Aaron Young*, Nevindu M. Batagoda*, Harry Zhang, Akshat Dave, Adithya Pediredla, Dan Negrut, Ramesh Raskar</p>
+
+				<div><span class="material-icons"> description </span><a href="assets/young2024robospad.pdf"> Paper preprint (PDF, 2.3 MB)</a></div>
+				<div><span class="material-icons"> description </span><a href=""> arXiv version</a></div>
+				<div><span class="material-icons"> insert_comment </span><a href="assets/young2024robospad.bib"> BibTeX</a></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="method">
+		<h2>Method</h2>
+		<hr>
+            <figure style="width: 100%;">
+                <a href="assets/pipeline.png">
+                    <img width="100%" src="assets/pipeline.png">
+                </a>
+                <p class="caption" style="text-align: justify">
+                    <strong>Our pipeline for NLOS-aided Autonomous Navigation.</strong> (a) <em>Sensing</em>: We capture multi-bounce histograms using single-photon LiDAR to gather information about hidden regions. (b) <em>Perception</em>: Captured histograms are then processed using a data-driven approach to estimate the occupancy map of the occluded region. (c) <em>Control</em>: Then the optimal path is planned based on the estimated occupancy map for navigating around obstacles.
+                </p>
+            </figure>
+            <hr>
+    
+            <p>
+                Robust autonomous navigation in environments with limited visibility is crucial for enhancing the safety and efficiency of mobile robots. As these robots are increasingly deployed in various applications—from industrial settings to urban environments—they must be capable of detecting and avoiding hidden obstacles to prevent accidents. Traditional perception systems often struggle with blind spots, which can lead to collisions and operational inefficiencies. Therefore, improving a robot's ability to "see around corners" and navigate effectively in such challenging environments is paramount.
+            </p>
+            
+            <p>
+                To address these challenges, we propose a novel pipeline that leverages Non-Line-of-Sight (NLOS) sensing using single-photon LiDAR. Our approach consists of three key modules:
+                <br><br>
+                <ol type="1">
+                    <li>
+                        <strong>Sensing:</strong> This module captures multi-bounce histograms from SPAD-based LiDAR, gathering information about hidden regions.
+                    </li>
+                    <li>
+                        <strong>Perception:</strong> The captured histograms are processed to estimate occupancy maps of the occluded areas, providing the robot with a clearer understanding of its surroundings.
+                    </li>
+                    <li>
+                        <strong>Control:</strong> Based on the estimated occupancy maps, the control module plans safe paths, allowing the robot to navigate effectively around obstacles.
+                    </li>
+                </ol>
+                By integrating these three components, our pipeline enhances the robot's perceptual capabilities, enabling it to navigate complex environments safely and efficiently.
+            </p>
+	</section>
+
+    <section id="simulated-results">
+        <h2>Simulated Results</h2>
+        <hr>
+        
+        <p>
+			Our simulations validate the effectiveness of the NLOS approach in various scenarios, specifically focusing on a mobile robot navigating through an L-shaped corridor. The results indicate a marked improvement in collision avoidance when utilizing multi-bounce light data compared to traditional line-of-sight (LOS) methods. For instance, at speeds ranging from 8 to 11 m/s, the NLOS perception reduced collision rates significantly: by 14% at 9–10 m/s and 9% at 10–11 m/s. These findings underscore the crucial role of detecting hidden objects in maintaining safe navigation, particularly at higher speeds where traditional systems struggle.
+        </p>
+        
+        <figure style="width: 100%">
+			<div class="row">
+				<div class="col-2">
+					<video id='sim_video1' width="75%" controls muted loop autoplay>
+						<source src="assets/sim_los.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="col-2">
+					<video id='sim_video2' width="75%" controls muted loop autoplay>
+						<source src="assets/sim_nlos.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+
+			<div class="row">
+				<p class="caption" style="text-align: center; width: 100%;">
+					Simulated navigation results showcasing the performance of our NLOS pipeline.
+				</p>
+			</div>
+        </figure>
+    </section>
+    
+    <section id="real-results">
+        <h2>Real Results</h2>
+        <hr>
+        
+        <p>
+			In real-world experiments, our NLOS-enabled robot demonstrated a substantial improvement in navigation efficiency. By leveraging multi-bounce LiDAR data, the robot successfully avoided obstacles in blind corners, achieving a trajectory that was 33% shorter and taking nearly twice as much time to navigate when using only LOS information. This improvement showcases the practical benefits of integrating NLOS perception into robotic systems, highlighting its potential for enhancing safety and efficiency in complex environments.
+        </p>
+        
+        <figure style="width: 100%">
+			<div class="row">
+				<div class="col-2">
+					<video id='real_video1' width="75%" controls muted loop autoplay>
+						<source src="assets/real_los.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="col-2">
+					<video id='real_video2' width="75%" controls muted loop autoplay>
+						<source src="assets/real_nlos.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+
+			<div class="row">
+				<p class="caption" style="text-align: center; width: 100%;">
+					Real-world navigation results demonstrating the effectiveness of NLOS perception.
+				</p>
+			</div>
+        </figure>
+    </section>
+    
+
+	<section id="bibtex">
+		<h2>Citation</h2>
+		<hr>
+		<pre><code>@inproceedings{young2024robospad,
+    author = {Young, Aaron and Batagoda, Nevindu M. and Zhang, Harry and Dave, Akshat and 
+        Pediredla, Adithya and Negrut, Dan and Raskar, Ramesh},
+    title = {Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR},
+    booktitle = {ArXiv},
+    year = {2024}
+}
+</code></pre>
+	</section>
+
+	<section id="acknowledgements">
+		<h2>Acknowledgements</h2>
+		<hr>
+		<div class="row">
+			<p>
+            The website template was adapted from <a href="https://tzofi.github.io/diser/">Tzofi Klinghoffer</a>. This work was supported in part through NSF project CMMI2153855. AY 
+            was supported by the NSF GRFP (No. 2022339767).
+			</p>
+		</div>
+	</section>
+</div>
+
+* Equal contribution.
+</body>
+</html>
