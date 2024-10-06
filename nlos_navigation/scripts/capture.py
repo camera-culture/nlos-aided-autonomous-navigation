@@ -23,8 +23,8 @@ ARUCO_CAMERA_ID: int = 137
 GANTRY_NAME: str = "SingleDrive1AxisGantry"
 GANTRY_X_RANGE: tuple[float, float] = (0, 32)  # [cm]
 GANTRY_Y_RANGE: tuple[float, float] = (0, 32)  # [cm]
-GANTRY_NUM_X_STEPS: int = 4
-GANTRY_NUM_Y_STEPS: int = 4
+GANTRY_NUM_X_STEPS: int = 10
+GANTRY_NUM_Y_STEPS: int = 10
 
 OUTPUT_PKL: Path = Path("logs") / datetime.now().strftime("%Y%m%d_%H%M%S") / "data.pkl"
 
@@ -68,7 +68,7 @@ def capture(
 ) -> bool:
     get_logger().info(f"Capturing frame {iter}...")
 
-    poses, images = algo.run(visualize=False, return_images=True)
+    poses, images = algo.run(show=True, return_images=True)
     histogram = spad.accumulate(1, average=True)
 
     writer.append(
