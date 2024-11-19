@@ -2,7 +2,7 @@
 
 This is the code for the paper
 
-**<a href="assets/young2024robospad.pdf">Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</a>**
+**<a href="docs/assets/young2024robospad.pdf">Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</a>**
 <br>
 <a href="https://AaronYoung5.github.io/">Aaron Young</a><sup>*</sup>, 
 <a href="https://www.linkedin.com/in/nevindu-b-664a3613b/">Nevindu M. Batagoda</a><sup>*</sup>, 
@@ -13,7 +13,7 @@ This is the code for the paper
 <a href="https://www.media.mit.edu/people/raskar/overview/">Ramesh Raskar</a>
 <br>
 
-[Paper](assets/young2024robospad.pdf) | [Code](https://github.com/camera-culture/nlos-aided-autonomous-navigation) | [Video](https://youtu.be/0GoUi0wrNMM)
+[Paper](docs/assets/young2024robospad.pdf) | [Code](https://github.com/camera-culture/nlos-aided-autonomous-navigation) | [Video](https://youtu.be/0GoUi0wrNMM)
 
 ## Abstract
 
