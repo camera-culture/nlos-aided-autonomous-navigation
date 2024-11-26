@@ -1,3 +1,0 @@
-[submodule "libs/cc-hardware"]
-	path = libs/cc-hardware
-	url = git@github.com:camera-culture/cc-hardware.git

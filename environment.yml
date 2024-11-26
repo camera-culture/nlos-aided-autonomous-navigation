@@ -1,6 +1,0 @@
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - gcc=12.1.0 
-  - numpy>=2.1
